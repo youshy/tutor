@@ -133,3 +133,159 @@ In my opinion, AWS Database Specialty is an excellent addition to the AWS Certif
 I hope this guide and contents within are helpful to those preparing to attempt the exam in the future.
 
 Good Luck!
+
+---
+
+Copied from [medium](https://medium.com/@vlad_13843/aws-certified-database-specialty-unofficial-exam-guide-4e38951481f5)
+
+---
+
+What Is the AWS Certified Database — Specialty Certification Exam?
+
+The AWS Certified Database — Specialty certification tests your understanding of different AWS database offerings. It is designed for individuals who perform database-related activities. It focuses on various aspects, such as design, migration, deployment, maintenance, monitoring, security, and disaster recovery. Like any other AWS exam, it is a theoretical test that contains a handful of single-choice and multiple-choice questions. The duration is around two hours. The exam fee is $150 for the beta and $300 for the final version when it becomes available.
+My impressions during the test
+
+The exam questions primarily focus on RDS and RDS Aurora. DynamoDB and AWS Database Migration Service are secondary topics that exam questions are sourced from. There were a couple of questions about RedShift and Neptune. Some questions offered AWS ElasticSearch and AWS ElastiCache as optional answers but did not discuss these topics in great detail. On top of the database offerings, a strong emphasis is put on AWS CloudFormation and AWS KMS. Below is a breakdown of the estimated percentage of exam questions by AWS service:
+
+    AWS RDS and Aurora — 40%
+    - Read replicas and Multi-AZ deployments in details
+    - Migrating from AWS RDS to Aurora
+    - Performance tuning for both RDS and Aurora RDS
+    - The “RDS Performance Insights” feature
+    - Exporting, analyzing, and manipulating RDS logs
+    AWS DynamoDB — 15%
+    - On-demand throughput and provisioned throughput
+    - Strongly consistent reads/writes and eventually consistent reads/writes
+    - AWS DynamoDB streams
+    - AWS DynamoDB global tables
+    AWS Database Migration Tool and Schema Conversion Tool — 15 %
+    - Use cases for AWS DMS and AWS SCT
+    - Combining AWS DMS with AWS Snowball for large amounts of data
+    - Conversion of stored procedures
+    AWS CloudFormation — 10%
+    - General questions about use cases
+    - Managing sensitive information using AWS Secret Manager and SSM parameter store
+    AWS Key Management Service — 10%
+    - Enabling encryption for AWS RDS and Aurora with minimal downtime
+    - Manipulating the encrypted database snapshots
+    Troubleshooting Database Connection Issues — 5%
+    - Network ACL and security groups pertaining to databases
+    Other — 5%
+    - Loading data into AWS Neptune
+    - Troubleshooting AWS RedShift
+    - Choosing the right database technology for a given use case
+
+How to prepare
+
+Preparation for this exam was a formidable challenge because there are almost no resources dedicated to the exam itself, except for the official exam guide, documentation, and AWS blogs. Below is a consolidated list of resources that I found helpful during my exam preparation.
+Official exam guide
+
+At the time of writing this report, this is the only official resource for the certification. There are no practice exams, LinuxAcademy, or ACloudGuru courses. You can download the exam guide here.
+Breakout sessions from re:Invent
+
+During my exam, I noticed that the use cases described in breakout sessions on re:Invent were sometimes a source of exam questions; this makes sense, as people who speak on stage often contribute to the exam questions. It’s not possible to watch all the sessions — but in general, the more sessions you watch, the higher your final score will be. Following this rule helped me to ace eight past AWS exams. Recordings of almost all re:Invent sessions are available on YouTube.
+AWS Documentation by Exam Topic: Supporting Links Just for You
+
+In the exam guide, there are five test domains and objectives. The list below aligns them with the appropriate AWS documentation. If you carefully read the entire list — the chance of winning increases.
+
+1.1 Select the appropriate database services for specific types of data and workloads.
+https://pages.awscloud.com/purpose-built-databases-ebook
+https://www.youtube.com/watch?v=HaEPXoXVf2k&t=1s
+
+1.2 Determine strategies for disaster recovery and high availability.
+https://aws.amazon.com/blogs/database/implementing-a-disaster-recovery-strategy-with-amazon-rds/
+https://aws.amazon.com/blogs/database/how-to-use-amazon-dynamodb-global-tables-to-power-multiregion-architectures/
+https://aws.amazon.com/dynamodb/global-tables/
+https://aws.amazon.com/rds/details/read-replicas/
+https://aws.amazon.com/rds/details/multi-az/
+https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html
+
+1.3 Design database solutions for performance, compliance, and scalability.
+
+Performance:
+https://aws.amazon.com/blogs/database/best-storage-practices-for-running-production-workloads-on-hosted-databases-with-amazon-rds-or-amazon-ec2/
+https://aws.amazon.com/blogs/database/boosting-application-performance-and-reducing-costs-with-amazon-elasticache-for-redis/
+https://aws.amazon.com/blogs/database/caching-for-performance-with-amazon-documentdb-and-amazon-elasticache/
+https://aws.amazon.com/blogs/database/optimizing-amazon-dynamodb-scan-latency-through-schema-design/
+https://aws.amazon.com/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/
+
+Compliance:
+https://aws.amazon.com/blogs/database/applying-best-practices-for-securing-sensitive-data-in-amazon-rds/
+https://aws.amazon.com/blogs/database/best-practices-for-securing-sensitive-data-in-aws-data-stores/
+https://aws.amazon.com/blogs/database/securing-data-in-amazon-rds-using-aws-kms-encryption/
+https://aws.amazon.com/blogs/database/how-lifeomics-jupiterone-simplifies-security-and-compliance-operations-with-amazon-neptune/
+
+Scalability:
+https://aws.amazon.com/blogs/database/autodesk-builds-on-amazon-aurora/
+https://aws.amazon.com/blogs/database/sharding-with-amazon-relational-database-service/
+https://aws.amazon.com/blogs/database/scaling-your-amazon-rds-instance-vertically-and-horizontally/
+https://aws.amazon.com/blogs/database/amazon-aurora-as-an-alternative-to-oracle-rac/
+https://aws.amazon.com/blogs/database/how-to-scale-aws-database-migration-service-dms-replication-instances/
+
+Costs:
+https://aws.amazon.com/blogs/database/reduce-database-cost-and-improve-availability-when-you-migrate-to-the-aws-cloud/
+https://aws.amazon.com/blogs/database/reducing-aurora-postgresql-storage-i-o-costs/
+https://aws.amazon.com/blogs/database/using-aws-cost-management-products-to-help-save-costs-on-amazon-rds-reserved-instances/
+https://aws.amazon.com/blogs/database/how-cloudability-boosted-performance-simplified-tuning-and-lowered-costs-with-amazon-aurora/
+
+2.1 Automate database-solution deployments.
+https://aws.amazon.com/blogs/database/part-1-role-of-the-dba-when-moving-to-amazon-rds-responsibilities/
+https://aws.amazon.com/blogs/database/automating-table-mappings-creation-in-aws-dms/
+https://aws.amazon.com/blogs/database/create-aws-cloudformation-templates-for-aws-dms-tasks-using-microsoft-excel/
+
+2.2 Determine data preparation and migration strategies.
+https://aws.amazon.com/blogs/database/automating-database-migration-and-refreshing-activities-with-aws-dms/
+https://aws.amazon.com/blogs/database/database-migration-what-do-you-need-to-know-before-you-start/
+https://aws.amazon.com/blogs/database/how-to-solve-some-common-challenges-faced-while-migrating-from-oracle-to-postgresql/
+https://aws.amazon.com/blogs/database/best-practices-for-migrating-an-oracle-database-to-amazon-rds-postgresql-or-amazon-aurora-postgresql-source-database-considerations-for-the-oracle-and-aws-dms-cdc-environment/
+
+2.3 Execute and validate data migration.
+https://aws.amazon.com/dms/resources/?nc=sn&loc=5
+https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html
+https://aws.amazon.com/blogs/database/validating-database-objects-after-migration-using-aws-sct-and-aws-dms/
+
+3.1 Determine maintenance tasks and processes.
+https://aws.amazon.com/premiumsupport/knowledge-center/rds-common-dba-tasks/
+
+3.2 Determine backup and restore strategies.
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html#Overview.BackupDeviceRestrictions
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_CommonTasks.BackupRestore.html
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BackupRestore.html
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/PointInTimeRecovery.html
+
+4.1 Determine monitoring and alerting strategies.
+https://docs.aws.amazon.com/en_pv/AmazonRDS/latest/UserGuide/CHAP_Monitoring.html
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.OS.html
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.html
+
+4.2 Troubleshoot and resolve common database issues.
+https://docs.aws.amazon.com/en_pv/AmazonRDS/latest/UserGuide/CHAP_Troubleshooting.html
+https://docs.aws.amazon.com/redshift/latest/dg/queries-troubleshooting.html
+https://docs.aws.amazon.com/redshift/latest/mgmt/troubleshooting-connections.html
+https://docs.aws.amazon.com/redshift/latest/dg/t_Troubleshooting_load_errors.html
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html
+https://docs.aws.amazon.com/dynamodb-encryption-client/latest/devguide/troubleshooting.html
+https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-handling-errors.html
+
+4.3 Optimize database performance.
+https://aws.amazon.com/blogs/database/best-storage-practices-for-running-production-workloads-on-hosted-databases-with-amazon-rds-or-amazon-ec2/
+https://aws.amazon.com/blogs/database/boosting-application-performance-and-reducing-costs-with-amazon-elasticache-for-redis/
+https://aws.amazon.com/blogs/database/caching-for-performance-with-amazon-documentdb-and-amazon-elasticache/
+https://aws.amazon.com/blogs/database/optimizing-amazon-dynamodb-scan-latency-through-schema-design/
+https://aws.amazon.com/blogs/database/amazon-dynamodb-auto-scaling-performance-and-cost-optimization-at-any-scale/
+
+5.1 Encrypt data at rest and in transit.
+https://aws.amazon.com/blogs/database/securing-data-in-amazon-rds-using-aws-kms-encryption/
+https://docs.aws.amazon.com/en_pv/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html
+
+5.2 Evaluate auditing solutions.
+https://aws.amazon.com/blogs/database/how-to-automate-the-audit-of-operational-best-practices-for-your-aws-account/
+https://aws.amazon.com/blogs/database/audit-amazon-aurora-database-logs-for-connections-query-patterns-and-more-using-amazon-athena-and-amazon-quicksight/
+https://aws.amazon.com/blogs/database/auditing-an-amazon-aurora-cluster/
+
+5.3 Determine access control and authentication mechanisms.
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.IAMDBAuth.html
+You got this
+
+For now, I need only to wait until the AWS finishes the beta period and announces the exam results. If I pass, I will later update this blog post with the new badge. Otherwise, this will serve as a letter to my future self that could help me if I need to retake the exam. There is no cost associated with retaking beta exams.
