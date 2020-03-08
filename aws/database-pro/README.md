@@ -1,3 +1,9 @@
+## The certificate itself
+
+[here](https://aws.amazon.com/certification/coming-soon/)
+
+---
+
 Copied from [here](https://github.com/borkod/AWS-Certified-Database-Specialty-Exam-Guide)
 
 ---
